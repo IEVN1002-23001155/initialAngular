@@ -6,10 +6,14 @@ import { HeroesList } from './heroes/heroes-list/heroes-list';
 //import { NgOptimizedImage } from '../../node_modules/@angular/common/types/common';
 import { NgOptimizedImage } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HeroesFilterPipe } from './heroes/heroes-filter-pipe';
+import { OperasBas } from './formularios/operas-bas/operas-bas';
+import { Figuras } from './formularios/figuras/figuras';
+import { Distancia } from './formularios/distancia/distancia';
 
 @NgModule({
-  declarations: [App, HeroesList],
-  imports: [BrowserModule, AppRoutingModule, NgOptimizedImage,FormsModule],
+  declarations: [App, HeroesList, HeroesFilterPipe, OperasBas, Figuras, Distancia],
+  imports: [BrowserModule, AppRoutingModule, NgOptimizedImage, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })

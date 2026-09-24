@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distancia</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Primera columna: Formulario -->
+            <div class="col-6">
+                <div class="mb-3">
+                    <form>
+                        <div class="form-group pt-4">
+                            <label for="x1">Punto X1:</label>
+                            <input [(ngModel)]="x1" name="x1" type="text" class="form-control" 
+                            id="x1" placeholder="Ingrese coordenada X1">
+                        </div>
+                        
+                        <div class="form-group pt-4">
+                            <label for="y1">Punto Y1:</label>
+                            <input [(ngModel)]="y1" name="y1" type="text" class="form-control" 
+                            id="y1" placeholder="Ingrese coordenada Y1">
+                        </div>
+
+                        <div class="form-group pt-4">
+                            <label for="x2">Punto X2:</label>
+                            <input [(ngModel)]="x2" name="x2" type="text" class="form-control" 
+                            id="x2" placeholder="Ingrese coordenada X2">
+                        </div>
+
+                        <div class="form-group pt-4">
+                            <label for="y2">Punto Y2:</label>
+                            <input [(ngModel)]="y2" name="y2" type="text" class="form-control" 
+                            id="y2" placeholder="Ingrese coordenada Y2">
+                        </div>
+                        <br>
+                        
+                        <button (click)="calcular()" type="button" class="btn btn-primary">
+                            Calcular Distancia
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-6">
+                <br>
+                <h3>Resultado: {{resultado}} </h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
